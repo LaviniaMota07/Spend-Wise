@@ -1,0 +1,21 @@
+.resumo-card {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  text-align: center;
+}
+
+.resumo-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.resumo-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4caf50;
+}

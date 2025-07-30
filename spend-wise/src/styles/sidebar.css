@@ -28,6 +28,14 @@
     color: #38bdf8;
 }
 
+.foto-perfil {
+  width: 60px;   
+  height: 60px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin: 20px auto;
+  display: block;
+}
 
 .nav-menu ul {
     list-style: none;
@@ -48,4 +56,13 @@
 .nav-menu li:hover,
 .nav-menu li.active {
   background-color: #334155;
+}
+
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-link:visited {
+  color: white;
 }

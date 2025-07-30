@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .resumo {
   padding: 1rem 0;
+  font-family: 'Poppins', sans-serif;
 }
+
+
+h2 {
+  text-align: center;
+}
+
 
 .cards {
   display: flex;
@@ -9,15 +18,13 @@
 }
 
 .card {
-  background-color: #1e1e1e;
-  padding: 1.5rem;
-  border-radius: 8px;
-  flex: 1;
-  min-width: 180px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: #2A2F45;
+    padding: 1.5rem;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border: 2px solid #5ED8F1;
 }
 
-.destaque {
-  border: 2px solid #00ffcc;
-}

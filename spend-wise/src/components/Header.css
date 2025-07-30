@@ -1,25 +1,11 @@
 .navbar {
   background-color: #1f1f1f;
-  padding: 1rem 2rem;
+  /*padding: 1rem 2rem;*/
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .logo {
   margin: 0;
   color: #00ffcc;
-  font-size: 1.5rem;
-}
-
-.header {
-  margin-bottom: 2rem;
-}
-
-.header h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.header p {
-  font-size: 1rem;
-  color: #cccccc;
+  /*font-size: 1.5rem;*/
 }

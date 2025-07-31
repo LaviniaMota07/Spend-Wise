@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #111827; 
+}
+
+.reports-title {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.chart-title {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.reports-container {
+    padding: 24px;
+    background-color: #111827; 
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.charts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.charts > div {
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
+}
+

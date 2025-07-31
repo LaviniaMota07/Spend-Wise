@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard'
 import Reports from './pages/Reports'
 import { Routes, Route } from 'react-router-dom'
 
+
 function App() {
   return (
     <div className="app-container">

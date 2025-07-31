@@ -29,13 +29,12 @@
 }
 
 .foto-perfil {
-  width: 60px;   
-  height: 60px;
-  border-radius: 50%; 
-  object-fit: cover;
+  font-size: 60px; /* tamanho do ícone */
+  color: #38bdf8;  /* cor azul clara */
   margin: 20px auto;
   display: block;
 }
+
 
 .nav-menu ul {
     list-style: none;

@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import Dashboard from './components/Dashboard'
 import Reports from './pages/Reports'
+import RegisterExpense from "./pages/RegisterExpense";
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/relatorios" element={<Reports />} />
+            <Route path="/registrar" element={<RegisterExpense />} />
           </Routes>
         </div>
         

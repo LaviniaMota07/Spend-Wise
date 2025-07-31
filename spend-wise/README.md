@@ -23,7 +23,7 @@ Spend Wise é uma aplicação moderna de controle financeiro pessoal, criada com
 
 - **React** — Biblioteca JavaScript para interfaces
 - **Vite** — Build tool moderno e super rápido
-- **CSS Modules** — Estilização por componente
+- **CSS** — Estilização por componente
 - **Chart.js** — Visualização de dados
 - **Git/GitHub** — Versionamento e colaboração
 
@@ -34,54 +34,47 @@ Spend Wise é uma aplicação moderna de controle financeiro pessoal, criada com
 ```bash
 spend-wise/
 │
-├── public/                           # Arquivos públicos acessíveis diretamente
-│   └── index.html                    # HTML principal onde o app é montado
+├── public/
+│   └── index.html                 # HTML principal onde o React é injetado
 │
-├── src/                              # Código-fonte da aplicação
+├── src/                           # Código-fonte da aplicação
 │
-│   ├── assets/                       # Imagens, ícones, SVGs e logos
-│   │   └── react.svg                 # Exemplo de asset usado na interface
+│   ├── assets/                    # Arquivos estáticos como imagens e ícones
+│   │   ├── foto-perfil.png        # Imagem de perfil usada na UI
+│   │   └── react.svg              # Ícone do React usado como decoração
 │
-│   ├── components/                   # Componentes reutilizáveis da interface
-│   │   ├── Header.jsx               # Cabeçalho da página
-│   │   ├── Header.css               # Estilos específicos do Header
-│   │   ├── Navbar.jsx               # Menu de navegação lateral ou superior
-│   │   ├── Resumo.jsx               # Cartões de resumo (Receita, Despesa, Saldo)
-│   │   ├── Resumo.css               # Estilos dos cartões de resumo
-│   │   └── ...                      # Outros componentes pequenos e modulares
+│   ├── components/                # Componentes reutilizáveis da interface
+│   │   ├── BarChart.jsx           # Gráfico de barras (ex: comparativo de gastos)
+│   │   ├── DoughnutChart.jsx      # Gráfico de rosca (ex: despesas por categoria)
+│   │   ├── Header.css             # Estilo específico para o cabeçalho (Header.jsx)
+│   │   ├── Header.jsx             # Componente do cabeçalho superior
+│   │   ├── LineChart.jsx          # Gráfico de linha (ex: evolução dos gastos)
+│   │   ├── ListaTransacoes.jsx    # Lista de transações (receitas/despesas)
+│   │   ├── Navbar.jsx             # Menu de navegação lateral ou superior
+│   │   ├── Resumo.css             # Estilos dos cartões de resumo
+│   │   ├── Resumo.jsx             # Cartões que mostram Receita, Despesa e Saldo
+│   │   └── Sidebar.jsx            # Barra lateral com links e ícones de navegação
 │
-│   ├── pages/                        # Páginas completas do app (rotas)
-│   │   ├── Dashboard.jsx            # Página principal com resumo e gráficos
-│   │   ├── Relatorios.jsx           # Página de relatórios com visualização de dados
-│   │   ├── Login.jsx                # Tela de login do usuário
-│   │   ├── Cadastro.jsx             # Tela de cadastro de usuário
-│   │   └── ...                      # Outras páginas futuras (ex: Perfil, Configurações)
+│   ├── pages/                     # Páginas completas (ligadas às rotas principais)
+│   │   ├── Dashboard.jsx          # Tela principal com resumo, gráficos e transações
+│   │   ├── RegisterExpense.jsx    # Página para cadastrar novas despesas
+│   │   └── Reports.jsx            # Tela de relatórios (análises mais detalhadas)
 │
-│   ├── styles/                       # Estilos globais e centralizados
-│   │   ├── main.css                 # CSS global da aplicação
-│   │   ├── App.css                  # Estilos do componente App
-│   │   └── variables.css            # Variáveis de cor, fonte, dark/light mode (opcional)
+│   ├── styles/                    # Estilos globais e por seção/página
+│   │   ├── App.css                # Estilos globais do componente App
+│   │   ├── dashboard.css          # Estilo específico da tela Dashboard
+│   │   ├── main.css               # Estilo global base (reset, fontes, tema geral)
+│   │   ├── RegisterExpense.css    # Estilo da página de cadastro de despesas
+│   │   ├── reports.css            # Estilo da tela de relatórios
+│   │   └── sidebar.css            # Estilos específicos para a Sidebar
 │
-│   ├── services/                     # Requisições a APIs e lógica externa
-│   │   ├── api.js                   # Configuração de instância do axios ou fetch
-│   │   ├── authService.js          # Login, logout e autenticação
-│   │   └── gastoService.js         # CRUD de receitas e despesas
+│   ├── App.jsx                    # Componente principal com as rotas e layout
+│   └── main.jsx                   # Ponto de entrada da aplicação React
 │
-│   ├── hooks/                        # Custom React Hooks (lógica reutilizável)
-│   │   └── useAuth.js              # Verifica login, redireciona etc.
-│
-│   ├── context/                      # Context API para estado global
-│   │   └── AuthContext.jsx         # Provedor de autenticação
-│
-│   ├── utils/                        # Funções utilitárias
-│   │   └── formatCurrency.js       # Formata números como R$ 1.000,00
-│
-│   ├── App.jsx                       # Componente principal com as rotas
-│   ├── main.jsx                      # Ponto de entrada da aplicação (ReactDOM)
-│
-├── .gitignore                        # Arquivos e pastas ignorados pelo Git
-├── package.json                      # Dependências e scripts do projeto
-├── vite.config.js                    # Configuração do Vite
-├── README.md                         # Descrição e instruções do projeto
-└── LICENSE (opcional)                # Licença do projeto (MIT, etc)
+├── .gitignore                     # Arquivos/pastas que o Git deve ignorar
+├── package.json                   # Lista de dependências e scripts do projeto
+├── package-lock.json              # Travamento exato das versões das dependências
+├── vite.config.js (se houver)     # Configurações do Vite (build, alias, etc.)
+└── README.md                      # Documentação e instruções do projeto
+
 

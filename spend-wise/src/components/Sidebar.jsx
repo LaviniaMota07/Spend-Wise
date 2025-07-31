@@ -14,7 +14,7 @@ function Sidebar() {
           <li className="active"><FaHome /> <span><Link to="/" className="sidebar-link">Início</Link></span></li>
           <li><FaMoneyBillWave /> <span><Link to="/registrar" className="sidebar-link">Registrar Despesas</Link></span></li>
           <li><FaChartPie /> <span><Link to="/relatorios" className="sidebar-link">Relatórios</Link></span></li>
-          <li><FaBullseye /> <span>Metas</span></li>
+          <li><FaBullseye /> <span><Link to="/registrar metas" className="sidebar-link">Metas</Link></span></li>
           <li><FaCog /> <span>Configurações</span></li>
         </ul>
       </nav>

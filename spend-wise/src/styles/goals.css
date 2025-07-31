@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.goals-page {
+    font-family:  'Poppins', sans-serif;
+    flex: 1;
+    padding: 2rem;
+    color: #f1f5f9;
+}
+
+h1 {
+    text-align: center;
+}
+
+.goals-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.goals-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-container,
+.charts-container {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #38bdf8;
+}
+
+.goal-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.goal-form input,
+.goal-form select,
+.goal-form textarea {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #0f172a;
+    color: white;
+}
+
+.save-goal-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.75rem;
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-goal-btn:hover {
+    background-color: #0ea5e9;
+}
+
+.charts {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.chart-box {
+    background-color: #0f172a;
+    padding: 1rem;
+    border-radius: 10px;
+    flex: 1 1 300px;
+}

@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar'
 import Dashboard from './components/Dashboard'
 import Reports from './pages/Reports'
 import RegisterExpense from "./pages/RegisterExpense";
+import Goals from './pages/Goals'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/relatorios" element={<Reports />} />
             <Route path="/registrar" element={<RegisterExpense />} />
+            <Route path="/registrar metas" element={<Goals />} />
           </Routes>
         </div>
         

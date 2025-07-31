@@ -7,17 +7,20 @@ import Dashboard from './components/Dashboard'
 import Reports from './pages/Reports'
 import { Routes, Route } from 'react-router-dom'
 
-
 function App() {
   return (
     <div className="app-container">
       <Header />
       <div className="main-content">
         <Sidebar />
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
+        
+        <div className="route-content">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
             <Route path="/relatorios" element={<Reports />} />
-        </Routes>
+          </Routes>
+        </div>
+        
       </div>
     </div>
   )

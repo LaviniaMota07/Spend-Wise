@@ -1,4 +1,3 @@
-// src/pages/Reports.jsx
 import { Bar, Doughnut, Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, ArcElement, LineElement, PointElement, Tooltip, Legend } from 'chart.js';
 
@@ -50,25 +49,43 @@ export default function Reports() {
   };
 
   return (
-    <div className="p-6 text-white">
-      <h2 className="text-2xl font-semibold mb-6">Relatórios Financeiros</h2>
+        <div className="p-6 text-white">
+        <h2 className="text-2xl font-semibold mb-6">Relatórios Financeiros</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-[#1f2937] p-4 rounded-2xl shadow-lg">
-          <h3 className="mb-2">Gastos por Mês</h3>
-          <Bar data={barData} />
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Gráfico 1 */}
+            <div className="bg-[#1f2937] p-4 rounded-2xl shadow-lg flex flex-col items-center" style={{ height: "300px" }}>
+            <h3 className="mb-2 text-center">Gastos por Mês</h3>
+            <div className="w-full h-full">
+                <Bar
+                data={barData}
+                options={{ maintainAspectRatio: false, responsive: true }}
+                />
+            </div>
+            </div>
 
-        <div className="bg-[#1f2937] p-4 rounded-2xl shadow-lg">
-          <h3 className="mb-2">Distribuição por Categoria</h3>
-          <Doughnut data={doughnutData} />
-        </div>
+            {/* Gráfico 2 */}
+            <div className="bg-[#1f2937] p-4 rounded-2xl shadow-lg flex flex-col items-center" style={{ height: "300px" }}>
+            <h3 className="mb-2 text-center">Distribuição por Categoria</h3>
+            <div className="w-full h-full">
+                <Doughnut
+                data={doughnutData}
+                options={{ maintainAspectRatio: false, responsive: true }}
+                />
+            </div>
+            </div>
 
-        <div className="bg-[#1f2937] p-4 rounded-2xl shadow-lg col-span-1 md:col-span-2">
-          <h3 className="mb-2">Evolução Semanal do Saldo</h3>
-          <Line data={lineData} />
+            {/* Gráfico 3 */}
+            <div className="bg-[#1f2937] p-4 rounded-2xl shadow-lg flex flex-col items-center md:col-span-3" style={{ height: "300px" }}>
+            <h3 className="mb-2 text-center">Evolução Semanal do Saldo</h3>
+            <div className="w-full h-full">
+                <Line
+                data={lineData}
+                options={{ maintainAspectRatio: false, responsive: true }}
+                />
+            </div>
+            </div>
         </div>
-      </div>
-    </div>
+        </div>
   );
 }

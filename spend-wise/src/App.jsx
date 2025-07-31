@@ -15,7 +15,7 @@ function App() {
         <Sidebar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          
+            <Route path="/relatorios" element={<Reports />} />
         </Routes>
       </div>
     </div>

@@ -29,8 +29,8 @@
 }
 
 .foto-perfil {
-  font-size: 60px; /* tamanho do ícone */
-  color: #38bdf8;  /* cor azul clara */
+  font-size: 60px; 
+  color: #38bdf8;  
   margin: 20px auto;
   display: block;
 }
@@ -64,4 +64,26 @@
 
 .sidebar-link:visited {
   color: white;
+}
+
+.sidebar li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s;
+  border-radius: 8px;
+}
+
+.sidebar li.active {
+  background-color: #2c2c4c;
+}
+
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
 }

@@ -7,7 +7,8 @@ import LineChart from "../components/LineChart";
 function Goals() {
   return (
     <div className="goals-page">
-      <h1 className="goals-title">Metas Financeiras</h1>
+      <h1 className="title">SPEND WISE</h1>
+      <h2 className="goals-title">Metas Financeiras</h2>
 
       <section className="goals-section">
         <div className="form-container">

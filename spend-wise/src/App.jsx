@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard'
 import Reports from './pages/Reports'
 import RegisterExpense from "./pages/RegisterExpense";
 import Goals from './pages/Goals'
+import ConfigPage from './pages/ConfigPage'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/relatorios" element={<Reports />} />
             <Route path="/registrar" element={<RegisterExpense />} />
             <Route path="/registrar metas" element={<Goals />} />
+            <Route path="/configuracao" element={<ConfigPage />} />
           </Routes>
         </div>
         

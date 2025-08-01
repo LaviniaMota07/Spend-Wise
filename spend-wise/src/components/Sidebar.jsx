@@ -37,9 +37,9 @@ function Sidebar() {
               <Link to="/registrar metas" className="sidebar-link">Metas</Link>
             </span>
           </li>
-          <li>
+          <li className={location.pathname === '/configuracoes' ? 'active' : ''}>
             <FaCog />
-            <span>Configurações</span>
+            <span><Link to="/configuracao" className="sidebar-link">Configurações</Link></span>
           </li>
         </ul>
       </nav>

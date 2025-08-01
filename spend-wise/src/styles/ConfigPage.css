@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.page {
+  padding: 40px;
+  color: #fff;
+}
+
+.page-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.config-section {
+    font-family: 'Poppins', sans-serif;
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.config-section h2 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.config-item {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.config-item label {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 6px;
+}
+
+.config-item input,
+.config-item select {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2e2e42;
+  color: #fff;
+}
+
+.danger-button {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}

@@ -1,8 +1,11 @@
 import React from 'react'
 import '../styles/goals.css'
 import { FaPlus } from 'react-icons/fa'
-import DoughnutChart from "../components/DoughnutChart";
-import LineChart from "../components/LineChart";
+import GoalsLineChart from '../components/Charts/GoalsLineChart';
+import GoalsBarChart from '../components/Charts/GoalsBarChart';
+import GoalsPieChart from '../components/Charts/GoalsPieChart';
+import GoalsHorizontalBarChart from '../components/Charts/GoalsHorizontalBarChart';
+import GoalsGaugeChart from '../components/Charts/GoalsGaugeChart';
 
 function Goals() {
   return (
@@ -34,13 +37,16 @@ function Goals() {
 
         <div className="charts-container">
           <h2 className="section-title">Visualização das metas</h2>
-          <div className="charts">
-            <div className="chart-box">
-              <DoughnutChart title="Metas por Categoria" />
-            </div>
-            <div className="chart-box">
-              <LineChart title="Progresso ao Longo do Tempo" />
-            </div>
+         <div className="goals-charts">
+          <div className="goalschart-row">
+            <div className="goalschart-box"><GoalsLineChart title="Evolução Econômica" /></div>
+            <div className="goalschart-box"><GoalsBarChart title="Metas por Categoria" /></div>
+            <div className="goalschart-box"><GoalsPieChart title="Distribuição das Economias" /></div>
+          </div>
+          <div className="goalschart-row">
+            <div className="goalschart-box"><GoalsHorizontalBarChart title="Progresso por Meta" /></div>
+            <div className="goalschart-box"><GoalsGaugeChart title="Percentual Total Atingido" /></div>
+          </div>
           </div>
         </div>
       </section>

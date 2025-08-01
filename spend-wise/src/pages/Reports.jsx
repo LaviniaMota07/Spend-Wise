@@ -1,7 +1,7 @@
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, ArcElement, LineElement, PointElement, Tooltip, Legend } from 'chart.js';
-import BarChart from '../components/BarChart';
-import DoughnutChart from '../components/DoughnutChart';
-import LineChart from '../components/LineChart';
+import BarChart from '../components/Charts/BarChart';
+import DoughnutChart from '../components/Charts/DoughnutChart';
+import LineChart from '../components/Charts/LineChart';
 import '../styles/reports.css';
 
 

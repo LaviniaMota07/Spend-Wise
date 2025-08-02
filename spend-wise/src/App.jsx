@@ -8,6 +8,8 @@ import Reports from './pages/Reports'
 import RegisterExpense from "./pages/RegisterExpense";
 import Goals from './pages/Goals'
 import ConfigPage from './pages/ConfigPage'
+import RegisterGoals from './pages/RegisterGoals'
+
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -22,8 +24,9 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/relatorios" element={<Reports />} />
             <Route path="/registrar" element={<RegisterExpense />} />
-            <Route path="/registrar metas" element={<Goals />} />
+            <Route path="/metas" element={<Goals />} />
             <Route path="/configuracao" element={<ConfigPage />} />
+            <Route path="/registrar-meta" element={<RegisterGoals />} />
           </Routes>
         </div>
         

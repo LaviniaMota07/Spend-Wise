@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/sidebar.css'
-import { FaHome, FaChartPie, FaMoneyBillWave, FaCog, FaBullseye, FaUserCircle } from 'react-icons/fa'
+import { FaHome, FaChartPie, FaMoneyBillWave, FaCog, FaBullseye, FaUserCircle, FaPlusCircle } from 'react-icons/fa'
 import { Link, useLocation } from 'react-router-dom'
 
 function Sidebar() {
@@ -25,21 +25,29 @@ function Sidebar() {
               <Link to="/registrar" className="sidebar-link">Registrar Despesas</Link>
             </span>
           </li>
+          <li className={location.pathname === '/registrar-meta' ? 'active' : ''}>
+            <FaPlusCircle />
+            <span>
+              <Link to="/registrar-meta" className="sidebar-link">Registrar Meta</Link>
+            </span>
+          </li>
           <li className={location.pathname === '/relatorios' ? 'active' : ''}>
             <FaChartPie />
             <span>
               <Link to="/relatorios" className="sidebar-link">Relatórios</Link>
             </span>
           </li>
-          <li className={location.pathname === '/registrar metas' ? 'active' : ''}>
+          <li className={location.pathname === '/metas' ? 'active' : ''}>
             <FaBullseye />
             <span>
-              <Link to="/registrar metas" className="sidebar-link">Metas</Link>
+              <Link to="/metas" className="sidebar-link">Visualizar Metas</Link>
             </span>
           </li>
           <li className={location.pathname === '/configuracoes' ? 'active' : ''}>
             <FaCog />
-            <span><Link to="/configuracao" className="sidebar-link">Configurações</Link></span>
+            <span>
+              <Link to="/configuracao" className="sidebar-link">Configurações</Link>
+            </span>
           </li>
         </ul>
       </nav>
@@ -47,4 +55,4 @@ function Sidebar() {
   )
 }
 
-export default Sidebar
+export default Sidebar;

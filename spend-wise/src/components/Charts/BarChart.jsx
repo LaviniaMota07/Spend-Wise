@@ -13,11 +13,11 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 export default function BarChart() {
   const data = {
-    labels: ["Janeiro", "Fevereiro", "Março", "Abril"],
+    labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Junho","Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
     datasets: [
       {
         label: "Despesas (R$)",
-        data: [1200, 950, 800, 1300],
+        data: [1200, 950, 800, 1300, 1000, 900, 1100, 1250, 850, 950, 1000, 1150],
         backgroundColor: "#6366f1",
       },
     ],

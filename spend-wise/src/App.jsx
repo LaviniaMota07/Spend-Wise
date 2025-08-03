@@ -9,14 +9,16 @@ import RegisterExpense from "./pages/RegisterExpense";
 import Goals from './pages/Goals'
 import ConfigPage from './pages/ConfigPage'
 import RegisterGoals from './pages/RegisterGoals'
+import Particulas from './components/Particulas'
 
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="app-container" style={{ position: 'relative', overflow: 'hidden' }}>
+      <Particulas />
       <Header />
-      <div className="main-content">
+<    div className="main-content" style={{ position: 'relative', zIndex: 1 }}>
         <Sidebar />
         
         <div className="route-content">

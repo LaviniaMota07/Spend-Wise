@@ -3,9 +3,8 @@ import '../styles/goals.css'
 import { FaPlus } from 'react-icons/fa'
 import GoalsLineChart from '../components/Charts/GoalsLineChart';
 import GoalsBarChart from '../components/Charts/GoalsBarChart';
-import GoalsPieChart from '../components/Charts/GoalsPieChart';
-import GoalsHorizontalBarChart from '../components/Charts/GoalsHorizontalBarChart';
-import GoalsGaugeChart from '../components/Charts/GoalsGaugeChart';
+import GoalsPieChart from '../components/Charts/GroupedBarChart';
+import GoalsGaugeChart from '../components/Charts/GoalsDoughnutChart';
 
 function Goals() {
   return (
@@ -21,7 +20,6 @@ function Goals() {
             <div className="goalschart-box"><GoalsPieChart title="Distribuição das Economias" /></div>
           </div>
           <div className="goalschart-row">
-            <div className="goalschart-box"><GoalsHorizontalBarChart title="Progresso por Meta" /></div>
             <div className="goalschart-box"><GoalsGaugeChart title="Percentual Total Atingido" /></div>
           </div>
           </div>

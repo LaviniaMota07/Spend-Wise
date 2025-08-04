@@ -18,7 +18,7 @@ const data = [
 
 const GoalsLineChart = () => (
   <div className="chart-card">
-    <h3 className="chart-title">Evolução da Economia</h3>
+    <h3 className="chart-title">Evolução Econômica</h3>
     <ResponsiveContainer width="100%" height={250}>
       <LineChart data={data}>
         <CartesianGrid stroke="#334155" />

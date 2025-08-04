@@ -14,18 +14,26 @@ ChartJS.register(BarElement, CategoryScale, LinearScale, Legend, Tooltip, Title)
 const ResumoChart = () => {
   const labels = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
 
+  const receitas = [2000, 2500, 2200, 2600, 2800, 2400, 3000, 3200, 2900, 3100, 3300, 3500];
+  const despesas = [1800, 2000, 2100, 1900, 2200, 2000, 2500, 2700, 2600, 2400, 2600, 2700];
+  const saldo = receitas.map((r, i) => r - despesas[i]);
   const data = {
     labels,
     datasets: [
       {
         label: 'Receitas',
-        data: [2000, 1500, 1800, 300, 509, 345, 789, 800, 110, 220, 330, 220], 
-        backgroundColor: '#5ED8F1', // 
+        data: receitas, 
+        backgroundColor: '#5ED8F1',
       },
       {
         label: 'Despesas',
-        data: [1000, 900, 1400, 770, 1110, 2070, 220, 690, 770, 990, 660, 1000], 
+        data: despesas, 
         backgroundColor: '#d65839ff',
+      },
+      {
+        label: 'Saldo',
+        data: saldo,
+        backgroundColor: '#3978d6ff',
       },
     ],
   };

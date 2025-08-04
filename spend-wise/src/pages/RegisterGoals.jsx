@@ -1,17 +1,13 @@
-// src/pages/RegisterGoalPage.jsx
 import React from 'react';
-import '../styles/goals.css';
+import '../styles/RegisterGoals.css';
 import { FaPlus } from 'react-icons/fa';
 
 function RegisterGoalPage() {
   return (
-    <div className="goals-page">
-      <h1 className="title">SPEND WISE</h1>
-      <h2 className="goals-title">Registrar Nova Meta</h2>
-
-      <section className="goals-section">
+    <div className="register-goal-page">
+      <section className="register-goal-section">
         <div className="form-container">
-          <h2 className="section-title">Registrar nova meta</h2>
+          <h2 className="section-title">Registrar Nova Meta</h2>
           <form className="goal-form">
             <input type="text" placeholder="Nome da meta" />
             <select>

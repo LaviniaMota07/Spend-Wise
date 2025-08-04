@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.register-goal-page {
+  font-family: 'Poppins', sans-serif;
+  flex: 1;
+  padding: 2rem;
+  color: #f1f5f9;
+}
+
+.register-goal-section {
+  padding: 2rem;
+  background-color: #1e293b;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 2rem auto;
+  color: #f1f5f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-family: 'Poppins', sans-serif;
+}
+
+.goal-form input,
+.goal-form select,
+.goal-form textarea {
+  margin-top: 0.3rem;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #0f172a;
+  color: white;
+}
+
+.save-goal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.save-goal-btn:hover {
+  background-color: #0ea5e9;
+}
+
+.section-title {
+      font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
+  text-align: center;
+}
+
+.goal-form{
+display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/goals.css'
+import '../styles/ViewGoals.css'
 import { FaPlus } from 'react-icons/fa'
 import GoalsLineChart from '../components/Charts/GoalsLineChart';
 import GoalsBarChart from '../components/Charts/GoalsBarChart';
@@ -8,9 +8,9 @@ import GoalsGaugeChart from '../components/Charts/GoalsDoughnutChart';
 
 function Goals() {
   return (
-    <div className="goals-page">
+    <div className="view-goals-page">
       <h1 className="title">SPEND WISE</h1>
-      <section className="goals-section">
+      <section className="view-section">
         <div className="charts-container">
           <h2 className="section-title">Visualização das metas</h2>
          <div className="goals-charts">

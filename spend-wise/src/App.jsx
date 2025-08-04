@@ -10,7 +10,7 @@ import Goals from './pages/Goals'
 import ConfigPage from './pages/ConfigPage'
 import RegisterGoals from './pages/RegisterGoals'
 import Particulas from './components/Particulas'
-//import ExpenseList from './pages/ExpenseList'
+import ExpenseList from './pages/ExpenseList'
 
 import { Routes, Route } from 'react-router-dom'
 
@@ -30,6 +30,7 @@ function App() {
             <Route path="/metas" element={<Goals />} />
             <Route path="/configuracao" element={<ConfigPage />} />
             <Route path="/registrar-meta" element={<RegisterGoals />} />
+            <Route path="/lista-despesas" element={<ExpenseList />} />
           </Routes>
         </div>
         

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/sidebar.css'
-import { FaHome, FaChartPie, FaMoneyBillWave, FaCog, FaBullseye, FaUserCircle, FaPlusCircle } from 'react-icons/fa'
+import { FaHome, FaChartPie, FaMoneyBillWave, FaCog, FaBullseye, FaUserCircle, FaPlusCircle, FaList } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom'
 
 function Sidebar() {
@@ -41,6 +41,12 @@ function Sidebar() {
             <FaBullseye />
             <span>
               <Link to="/metas" className="sidebar-link">Visualizar Metas</Link>
+            </span>
+          </li>
+          <li className={location.pathname === '/lista-despesas' ? 'active' : ''}>
+            <FaList />
+            <span>
+              <Link to="/lista-despesas" className="sidebar-link">Lista de Despesas</Link>
             </span>
           </li>
           <li className={location.pathname === '/configuracoes' ? 'active' : ''}>

@@ -1,0 +1,25 @@
+/* src/styles/listaDespesas.css */
+.lista-despesas {
+  padding: 2rem;
+  color: white;
+}
+
+.lista-despesas table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e293b;
+  color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.lista-despesas th,
+.lista-despesas td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #334155;
+}
+
+.lista-despesas th {
+  background-color: #0f172a;
+}

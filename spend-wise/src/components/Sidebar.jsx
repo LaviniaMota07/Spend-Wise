@@ -37,17 +37,23 @@ function Sidebar() {
               <Link to="/relatorios" className="sidebar-link">Relatórios</Link>
             </span>
           </li>
+
+          <li className={location.pathname === '/lista-despesas' ? 'active' : ''}>
+            <FaList />
+            <span>
+              <Link to="/lista-despesas" className="sidebar-link">Lista de Despesas</Link>
+            </span>
+          </li>
           <li className={location.pathname === '/metas' ? 'active' : ''}>
             <FaBullseye />
             <span>
               <Link to="/metas" className="sidebar-link">Visualizar Metas</Link>
             </span>
           </li>
-          <li className={location.pathname === '/lista-despesas' ? 'active' : ''}>
-            <FaList />
-            <span>
-              <Link to="/lista-despesas" className="sidebar-link">Lista de Despesas</Link>
-            </span>
+          <li>
+            <a href="/goal-list" className="sidebar-link">
+              <FaBullseye /> Lista de Metas
+            </a>
           </li>
           <li className={location.pathname === '/configuracoes' ? 'active' : ''}>
             <FaCog />

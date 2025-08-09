@@ -28,7 +28,7 @@ const ResumoChart = () => {
       {
         label: 'Despesas',
         data: despesas, 
-        backgroundColor: '#d65839ff',
+        backgroundColor: '#6525ccff',
       },
       {
         label: 'Saldo',

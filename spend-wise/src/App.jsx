@@ -11,6 +11,7 @@ import ConfigPage from './pages/ConfigPage'
 import RegisterGoals from './pages/RegisterGoals'
 import Particulas from './components/Particulas'
 import ExpenseList from './pages/ExpenseList'
+import GoalListPage from './pages/GoalsList';
 
 import { Routes, Route } from 'react-router-dom'
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/configuracao" element={<ConfigPage />} />
             <Route path="/registrar-meta" element={<RegisterGoals />} />
             <Route path="/lista-despesas" element={<ExpenseList />} />
+            <Route path="/goal-list" element={<GoalListPage />} />
           </Routes>
         </div>
         

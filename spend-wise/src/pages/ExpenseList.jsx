@@ -11,6 +11,7 @@ const despesasExemplo = [
 function ListaDespesas() {
   return (
     <div className="lista-despesas">
+      <h1 class="title">SPEND WISE</h1>
       <h2>Lista de Despesas</h2>
       <table>
         <thead>

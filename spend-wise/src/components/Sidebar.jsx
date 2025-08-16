@@ -50,10 +50,11 @@ function Sidebar() {
               <Link to="/metas" className="sidebar-link">Visualizar Metas</Link>
             </span>
           </li>
-          <li>
-            <a href="/goal-list" className="sidebar-link">
-              <FaBullseye /> Lista de Metas
-            </a>
+          <li className={location.pathname === '/goal-list' ? 'active' : ''}>
+            <FaBullseye />
+            <span>
+              <Link to="/goal-list" className="sidebar-link">Lista de Metas</Link>
+            </span>
           </li>
           <li className={location.pathname === '/configuracoes' ? 'active' : ''}>
             <FaCog />

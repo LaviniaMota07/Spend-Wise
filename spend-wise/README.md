@@ -2,7 +2,7 @@
 
 # Spend Wise – Organização Financeira Inteligente
 
-Spend Wise é uma aplicação moderna de controle financeiro pessoal, criada com React e Vite, com foco em **visualização clara de dados**, **estilo escuro elegante** e **experiência simples e rápida**.
+Spend Wise é uma aplicação moderna de controle financeiro pessoal, criada com React e Vite, com foco em **visualização clara de dados** e **experiência simples e rápida**.
 
 <img src="https://user-images.githubusercontent.com/00000000/your-preview-image.png" alt="Spend Wise Preview" width="100%">
 
@@ -13,7 +13,6 @@ Spend Wise é uma aplicação moderna de controle financeiro pessoal, criada com
 - ✅ Interface escura, moderna e responsiva
 - ✅ Resumo financeiro com receitas, despesas e saldo
 - ✅ Componentes reutilizáveis com organização modular
-- 🔜 Cadastro e login de usuários
 - 🔜 Relatórios com gráficos (Chart.js)
 - 🔜 Histórico de transações e metas financeiras
 
@@ -22,7 +21,7 @@ Spend Wise é uma aplicação moderna de controle financeiro pessoal, criada com
 ## 🛠️ Tecnologias Utilizadas
 
 - **React** — Biblioteca JavaScript para interfaces
-- **Vite** — Build tool moderno e super rápido
+- **Vite** — Build tool
 - **CSS** — Estilização por componente
 - **Chart.js** — Visualização de dados
 - **Git/GitHub** — Versionamento e colaboração
